@@ -1,0 +1,94 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "AstroCal";
+}
+<h1>Welcome to AstroCal!</h1>
+<ul>
+<li><b>AstroCal</b> offers a calendar of important 2025 astrological dates for each zodiac sign, 
+<br>along with detailed descriptions of traits, strengths, and compatibility. Stay informed 
+<br>about key events like full moons, new moons, and planetary transits, while exploring 
+<br>what makes each zodiac sign unique.
+</li>
+</ul>
+<form method="post" asp-page="Events">
+    <label for="zodiacSign">Zodiac Sign:</label>
+    <select id="zodiacSign" name="zodiacSign" required>
+        <option value="" disabled selected>Select a zodiac sign</option>
+        <option value="aries">aries</option>
+        <option value="taurus">taurus</option>
+        <option value="gemini">gemini</option>
+        <option value="cancer">cancer</option>
+        <option value="leo">leo</option>
+        <option value="virgo">virgo</option>
+        <option value="libra">libra</option>
+        <option value="scorpio">scorpio</option>
+        <option value="sagittarius">sagittarius</option>
+        <option value="capricorn">capricorn</option>
+        <option value="aquarius">aquarius</option>
+        <option value="pisces">pisces</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+<br>
+    <center>
+    <h1>Zodiac Signs and Their Birth Dates</h1>
+    </center>
+    <table>
+        <thead>
+            <tr>
+                <th>Zodiac Sign</th>
+                <th>Birth Date Range</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aries</td>
+                <td>March 21 - April 19</td>
+            </tr>
+            <tr>
+                <td>Taurus</td>
+                <td>April 20 - May 20</td>
+            </tr>
+            <tr>
+                <td>Gemini</td>
+                <td>May 21 - June 20</td>
+            </tr>
+            <tr>
+                <td>Cancer</td>
+                <td>June 21 - July 22</td>
+            </tr>
+            <tr>
+                <td>Leo</td>
+                <td>July 23 - August 22</td>
+            </tr>
+            <tr>
+                <td>Virgo</td>
+                <td>August 23 - September 22</td>
+            </tr>
+            <tr>
+                <td>Libra</td>
+                <td>September 23 - October 22</td>
+            </tr>
+            <tr>
+                <td>Scorpio</td>
+                <td>October 23 - November 21</td>
+            </tr>
+            <tr>
+                <td>Sagittarius</td>
+                <td>November 22 - December 21</td>
+            </tr>
+            <tr>
+                <td>Capricorn</td>
+                <td>December 22 - January 19</td>
+            </tr>
+            <tr>
+                <td>Aquarius</td>
+                <td>January 20 - February 18</td>
+            </tr>
+            <tr>
+                <td>Pisces</td>
+                <td>February 19 - March 20</td>
+            </tr>
+        </tbody>
+    </table>
