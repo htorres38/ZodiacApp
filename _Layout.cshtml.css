@@ -1,0 +1,34 @@
+﻿*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #3e3a66;
+  padding: .1rem 0;
+  border-top: 5px solid #2f2b50; 
+}
+
+
+nav a {
+  color: #f2d9a1;
+  text-decoration: none;
+  padding: 0.3rem 1.5rem;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section:nth-child(odd) {
+  background-color: #f4f4f9;
+}
+
+section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+

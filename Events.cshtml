@@ -1,0 +1,25 @@
+@page
+@model EventsModel
+@{
+    ViewData["Title"] = $"Events for {Model.ZodiacSign}";
+}
+
+<h1>2025 Calendar Dates for @Model.ZodiacSign</h1>
+
+@if (Model.Events.Any())
+{
+    <ul>
+        @foreach (var ev in Model.Events)
+        {
+            <li>
+                <strong>Event:</strong> @ev.Name <br />
+                <strong>Date:</strong> @ev.Date <br />
+                <strong>Description:</strong> @ev.Description <br />
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No events found for this zodiac sign. Please check the spelling.</p>
+}
